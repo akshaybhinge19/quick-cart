@@ -36,7 +36,7 @@ const router = createBrowserRouter([
     ],
     errorElement: <Error/>
   },
-], {basename: '/quick-cart'});
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
