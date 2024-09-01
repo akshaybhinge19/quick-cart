@@ -2,7 +2,6 @@
   "name": "quick-cart",
   "version": "1.0.0",
   "description": "A quick cart is a e-commerce application",
-  "main": "App.js",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
@@ -25,6 +24,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
+    "gh-pages": "^6.1.1",
     "quick-cart": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
