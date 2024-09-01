@@ -1,13 +1,21 @@
 # quick-cart
-
-Task: Build a Simple E-commerce Product Listing and Cart System
+- Hosted Link: https://quik-cart.netlify.app/
+- Task: Build a Simple E-commerce Product Listing and Cart System
 Url for open api : https://fakestoreapi.com/products
 ## Getting Started
-- Clone: git@github.com:akshaybhinge19/quick-cart.git
- - npm install
- - npm start
-- npm run build 
-
+- clone repo
+```
+git clone git@github.com:akshaybhinge19/quick-cart.git
+npm install
+```
+- start local server
+```
+npm start
+```
+- build
+```
+npm run build
+```
 
 ### Prerequisites
 - node 22.x.x
