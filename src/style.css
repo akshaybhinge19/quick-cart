@@ -197,6 +197,7 @@ body {
     max-width: 75%;
     width: auto;
     margin: auto !important;
+    object-fit:contain !important;
 }
 
 .info-container>.info-content {
@@ -223,6 +224,16 @@ body {
     background: deepskyblue;
 }
 
+.info-content> *{
+    margin: 0.3rem 0px;
+}
+.info-container>.info-content .info-meta{
+    color: slategray;
+    font-size: 1.1rem;
+}
+.info-container>.info-content h2{
+    font-size: 1.4rem;
+}
 /*
     cart page css
 */
@@ -381,21 +392,33 @@ body {
 }
 
 @media (max-width: 600px) {
-    .cart-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .cart-item-image {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
         margin-bottom: 10px;
     }
 
     .cart-item-actions {
         margin-top: 10px;
-        align-self: flex-end;
+        align-self: flex-start;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+    .info-container>.info-image {
+        margin: auto;
+        border-right: unset;
+    }
+    .info-container>.info-content {
+        width: auto;
+        padding: 0px 20px;
+        border-top: solid 1px lightgray;
+    } 
+}
+
+@media (max-width: 400px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 

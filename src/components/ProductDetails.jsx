@@ -32,6 +32,7 @@ const ProductDetails = () => {
         </div>
         <div className="info-content">
           <h2>{title}</h2>
+          <h3 className="info-meta">{category}</h3>
           <span className="icon-container">
             <FaStar />
             { rating.rate } <span>({rating.count})</span>
@@ -39,10 +40,11 @@ const ProductDetails = () => {
           <h2>
             <a className="info-meta info-price">${price}</a>
           </h2>
-          <h3 className="info-meta">{category}</h3>
-          <p>{description}</p>
           <div className="info-meta" tabIndex="0">
             <button className="info-action" onClick={(e)=>handleAddToCart(e,product)}>Add to Cart</button>
+          </div>
+          <div>
+            <p>{description}</p>
           </div>
         </div>
       </div>
